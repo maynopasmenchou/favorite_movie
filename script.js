@@ -39,7 +39,7 @@ const movies = {
         ],
 
         quote: '"Remember me, even when I\'m far away."',
-        footer: "A story of family, music, dreams, and memories."
+        footer: "Discover the stories, emotions, and lessons that stay with us."
     },
 
     // PART 2 CONTINUES HERE
@@ -76,7 +76,7 @@ const movies = {
         ],
 
         quote: '"Remember who you are."',
-        footer: "A story of courage, family, and responsibility."
+        footer: "Discover the stories, emotions, and lessons that stay with us."
     },
 
     wildrobot: {
@@ -112,7 +112,7 @@ const movies = {
         ],
 
         quote: '"Sometimes to survive, we must become more than what we were made to be."',
-        footer: "A story of kindness, love, and belonging."
+        footer: "Discover the stories, emotions, and lessons that stay with us."
     },
 
     // PART 3 CONTINUES HERE
@@ -149,7 +149,7 @@ const movies = {
         ],
 
         quote: '"When given the choice between being right or being kind, choose kind."',
-        footer: "A story of kindness, courage, and acceptance."
+        footer: "Discover the stories, emotions, and lessons that stay with us."
     }
 };
 // DISPLAY SELECTED MOVIE
