@@ -12,11 +12,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 /* =========================
    NAVIGATION
 ========================= */
-
 .header {
     width: 100%;
     min-height: 85px;
@@ -62,13 +60,11 @@ body {
     color: #f4b942;
 }
 
-
 /* =========================
    HOME SECTION
 ========================= */
-
 .home {
-    min-height: 650px;
+    min-height: 200px;
     padding: 65px 10%;
 
     display: flex;
@@ -128,11 +124,9 @@ body {
     color: #f4b942;
 }
 
-
 /* POSTER AND WATCH BUTTON */
-
 .home-movie {
-    width: 380px;
+    width: 250px;
     flex-shrink: 0;
 
     display: flex;
@@ -147,7 +141,7 @@ body {
 
 .home-image img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 
     display: block;
@@ -189,7 +183,6 @@ body {
     margin-left: 10px;
 }
 
-
 /* =========================
    GENERAL SECTIONS
 ========================= */
@@ -215,7 +208,6 @@ body {
     font-size: 38px;
     letter-spacing: 3px;
 }
-
 
 /* =========================
    ABOUT SECTION
@@ -259,7 +251,6 @@ body {
     font-size: 14px;
     margin-bottom: 16px;
 }
-
 
 /* =========================
    LIFE LESSONS SECTION
@@ -349,7 +340,6 @@ body {
     line-height: 1.9;
     max-width: 300px;
 }
-
 
 /* =========================
    MY REFLECTION SECTION
@@ -460,8 +450,6 @@ body {
     border: none;
 }
 
-
-
 /* BACK TO HOME BUTTON */
 
 .back-home-btn {
@@ -487,8 +475,6 @@ body {
     background: #ffd16c;
     transform: translateY(-2px);
 }
-
-
 
 /* =========================
    RESPONSIVE DESIGN
@@ -568,4 +554,182 @@ body {
         padding: 12px;
     }
 
+}
+
+/* =========================
+   MOVIE SELECTION BUTTONS
+========================= */
+
+.home {
+    flex-wrap: wrap;
+    min-height: 550px;
+}
+
+.movie-selector {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.movie-selector > p {
+    color: #f4b942;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.movie-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.movie-choice {
+    padding: 11px 20px;
+    border: 1px solid rgba(244,185,66,0.5);
+    border-radius: 30px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.movie-choice:hover {
+    background: #4a3040;
+    border-color: #f4b942;
+    transform: translateY(-3px);
+}
+
+.movie-choice.active {
+    background: #e9a92f;
+    color: #170e18;
+    border-color: #e9a92f;
+}
+
+@media (max-width: 850px) {
+
+    .home {
+        padding-bottom: 60px;
+    }
+
+    .movie-selector {
+        margin-top: 25px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .movie-buttons {
+        gap: 8px;
+    }
+
+    .movie-choice {
+        padding: 9px 13px;
+        font-size: 10px;
+    }
+
+}
+
+/* =========================
+   MOVIE SELECTION BUTTONS
+========================= */
+
+.home {
+    flex-wrap: wrap;
+    min-height: 550px;
+}
+
+.movie-selector {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.movie-selector > p {
+    color: #f4b942;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.movie-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.movie-choice {
+    padding: 11px 20px;
+    border: 1px solid rgba(244,185,66,0.5);
+    border-radius: 30px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.movie-choice:hover {
+    background: #4a3040;
+    border-color: #f4b942;
+    transform: translateY(-3px);
+}
+
+.movie-choice.active {
+    background: #e9a92f;
+    color: #170e18;
+    border-color: #e9a92f;
+}
+
+@media (max-width: 850px) {
+
+    .home {
+        padding-bottom: 60px;
+    }
+
+    .movie-selector {
+        margin-top: 25px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .movie-buttons {
+        gap: 8px;
+    }
+
+    .movie-choice {
+        padding: 9px 13px;
+        font-size: 10px;
+    }
+
+}
+
+/* =========================
+   DYNAMIC MOVIE CONTENT
+========================= */
+
+/* Prevent sticky navigation from covering section headings */
+#home,
+#about,
+#lessons,
+#reflection {
+    scroll-margin-top: 90px;
+}
+
+/* Smooth transition when movie content changes */
+.about-image img,
+.home-image img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }

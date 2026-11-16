@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>COCO | Movie Website</title>
+    <title>MY FAVORITE MOVIE | Movie Website</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -17,7 +16,6 @@
 
     <!-- NAVIGATION -->
     <header class="header">
-
         <a href="#home" class="logo">MY FAVORITE MOVIE</a>
 
         <nav class="navbar">
@@ -26,25 +24,21 @@
             <a href="#lessons">LIFE LESSONS</a>
             <a href="#reflection">MY REFLECTION</a>
         </nav>
-
     </header>
-
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
 
         <div class="home-content">
 
-            <p class="small-title">DISNEY • PIXAR</p>
+            <p class="small-title" id="movieCategory">DISNEY • PIXAR</p>
 
-            <h1>COCO</h1>
+            <h1 id="movieTitle">COCO</h1>
 
-            <h2>Remember Me.</h2>
+            <h2 id="movieTagline">Remember Me.</h2>
 
-            <p class="description">
-                A story about family, memories, dreams, and the power
-                of music. Join Miguel on a magical journey to the
-                Land of the Dead.
+            <p class="description" id="movieDescription">
+                A heartwarming story about family, memories, dreams, and music.
             </p>
 
             <a href="#about" class="secondary-btn">
@@ -53,13 +47,13 @@
 
         </div>
 
-
         <div class="home-movie">
 
             <div class="home-image">
                 <img
+                    id="moviePoster"
                     src="https://image.tmdb.org/t/p/w780/eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
-                    alt="Coco movie poster">
+                    alt="Coco Movie Poster">
             </div>
 
             <button class="main-btn" id="openMovie">
@@ -68,53 +62,68 @@
 
         </div>
 
-    </section>
+        <!-- MOVIE SELECTOR -->
+        <div class="movie-selector">
 
+            <p>CHOOSE YOUR MOVIE</p>
+
+            <div class="movie-buttons">
+
+                <button class="movie-choice active" data-movie="coco">
+                    COCO
+                </button>
+
+                <button class="movie-choice" data-movie="lionking">
+                    THE LION KING
+                </button>
+
+                <button class="movie-choice" data-movie="wildrobot">
+                    THE WILD ROBOT
+                </button>
+
+                <button class="movie-choice" data-movie="wonder">
+                    WONDER
+                </button>
+
+            </div>
+        </div>
+
+    </section>
 
     <!-- ABOUT SECTION -->
     <section class="about section" id="about">
 
         <div class="section-heading">
 
-            <p>THE STORY BEHIND THE MOVIE</p>
+            <p id="aboutSubtitle">THE STORY BEHIND THE MOVIE</p>
 
-            <h2>ABOUT COCO</h2>
+            <h2 id="aboutTitle">ABOUT COCO</h2>
 
         </div>
-
 
         <div class="about-content">
 
             <div class="about-image">
                 <img
+                    id="aboutImage"
                     src="https://image.tmdb.org/t/p/w780/askg3SMvhqEl4OL52YuvdtY40Yb.jpg"
                     alt="Coco movie scene">
             </div>
 
-
             <div class="about-text">
 
-                <h3>A Journey Beyond Life</h3>
+                <h3 id="aboutHeading">A Journey Beyond Life</h3>
 
-                <p>
-                    Coco is a 2017 animated film produced by Pixar
-                    Animation Studios and released by Walt Disney
-                    Pictures.
+                <p id="aboutParagraph1">
+                    Coco is a 2017 animated film produced by Pixar Animation Studios.
                 </p>
 
-                <p>
-                    The story follows Miguel Rivera, a young boy who
-                    dreams of becoming a musician despite his family's
-                    ban on music. Through an unexpected adventure in
-                    the Land of the Dead, Miguel discovers the truth
-                    about his family and the importance of remembering
-                    the people we love.
+                <p id="aboutParagraph2">
+                    The story follows Miguel Rivera, a young boy who dreams of becoming a musician.
                 </p>
 
-                <p>
-                    The movie beautifully shows Mexican culture,
-                    family traditions, music, and the meaning of
-                    remembering our loved ones.
+                <p id="aboutParagraph3">
+                    The movie beautifully shows Mexican culture, family traditions, music, and memories.
                 </p>
 
             </div>
@@ -129,59 +138,48 @@
 
         <div class="section-heading">
 
-            <h2>Life <span>Lessons</span></h2>
+            <h2 id="lessonsTitle">Life <span>Lessons</span></h2>
 
-            <p>
-                Coco taught me valuable lessons that I can apply
-                in my everyday life.
+            <p id="lessonsIntro">
+                Coco taught me valuable lessons that I can apply in my everyday life.
             </p>
 
         </div>
 
-
         <div class="lesson-container">
 
-
-            <!-- FIRST CARD -->
             <div class="lesson-card">
 
                 <div class="lesson-icon">♡</div>
 
-                <h3>Family Comes First</h3>
+                <h3 id="lessonTitle1">Family Comes First</h3>
 
-                <p>
-                    Family is important because they are the
-                    people who love and support us.
+                <p id="lessonText1">
+                    Family is important because they are the people who love and support us.
                 </p>
 
             </div>
 
-
-            <!-- SECOND CARD -->
             <div class="lesson-card featured">
 
                 <div class="lesson-icon">♫</div>
 
-                <h3>Never Give Up</h3>
+                <h3 id="lessonTitle2">Never Give Up</h3>
 
-                <p>
-                    We should continue following our dreams
-                    even when challenges come our way.
+                <p id="lessonText2">
+                    We should continue following our dreams even when challenges come our way.
                 </p>
 
             </div>
 
-
-            <!-- THIRD CARD -->
             <div class="lesson-card">
 
                 <div class="lesson-icon">✿</div>
 
-                <h3>Remember Your Loved Ones</h3>
+                <h3 id="lessonTitle3">Remember Your Loved Ones</h3>
 
-                <p>
-                    Memories help us remember the people who
-                    have made a difference in our lives.
+                <p id="lessonText3">
+                    Memories help us remember the people who have made a difference in our lives.
                 </p>
 
             </div>
@@ -190,43 +188,32 @@
 
     </section>
 
-
     <!-- MY REFLECTION SECTION -->
     <section class="reflection section" id="reflection">
 
         <div class="section-heading">
 
-            <p>MY PERSONAL THOUGHTS</p>
+            <p id="reflectionSubtitle">MY PERSONAL THOUGHTS</p>
 
-            <h2>How Coco Affected My Life</h2>
+            <h2 id="reflectionTitle">How Coco Affected My Life</h2>
 
         </div>
 
-
         <div class="reflection-content">
 
-            <p>
-                Coco is one of my favorite movie because it teaches
-                me the importance of family, love, and following my 
-                dreams. While watching the movie, I realized that no
-                matter how difficult life becomes, I should never
-                forget the people who love and support me.
+            <p id="reflectionParagraph1">
+                Coco is one of my favorite movies because it teaches me the importance of family, love, and following my dreams.
             </p>
 
-            <p>
-                The story of Miguel inspired me to follow my dreams
-                even when there are challenges along the way. It also
-                taught me to appreciate my family, spend more time
-                with them, and make memories while we are together.
+            <p id="reflectionParagraph2">
+                The story of Miguel inspired me to follow my dreams even when there are challenges along the way.
             </p>
 
-            <p>
-                For me, Coco is more than just an animated movie.
-                It reminds me that family will always be important
-                and that the memories we share will stay in our hearts.
+            <p id="reflectionParagraph3">
+                For me, Coco is more than just an animated movie. It reminds me that family will always be important.
             </p>
 
-            <h3>
+            <h3 id="reflectionQuote">
                 "Remember me, even when I'm far away."
             </h3>
 
@@ -238,12 +225,14 @@
     <!-- FOOTER -->
     <footer class="footer">
 
-        <h2>COCO</h2>
+        <h2 id="footerTitle">COCO</h2>
 
-        <p>A story of family, music, dreams, and memories.</p>
+        <p id="footerDescription">
+            A story of family, music, dreams, and memories.
+        </p>
 
         <p class="copyright">
-            © 2026 COCO Movie Website | School Project
+            © 2026 MY FAVORITE MOVIE WEBSITE | School Project
         </p>
 
     </footer>
@@ -259,14 +248,13 @@
                 <iframe
                     id="movieFrame"
                     src=""
-                    title="Coco YouTube video player"
+                    title="Movie video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen>
                 </iframe>
 
             </div>
-
 
             <button class="back-home-btn" id="backHome">
                 ← BACK TO HOME
